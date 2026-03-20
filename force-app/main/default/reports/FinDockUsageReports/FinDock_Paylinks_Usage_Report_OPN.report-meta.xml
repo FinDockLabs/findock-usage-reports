@@ -30,6 +30,7 @@
     </filter>
     <format>Summary</format>
     <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
         <field>CUST_CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>

@@ -24,6 +24,20 @@
     </dashboardFilters>
     <dashboardGridLayout>
         <dashboardGridComponents>
+            <colSpan>12</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <componentType>RichText</componentType>
+                <dashboardComponentContents>
+                    <richTextContent>[{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;bold\&amp;quot;:true},\&amp;quot;insert\&amp;quot;:\&amp;quot;The data used for billing may differ from the data shown in these reports due to archival processes or deletion of data at the source.\&amp;quot;},{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;align\&amp;quot;:\&amp;quot;left\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;\\n\&amp;quot;}]</richTextContent>
+                </dashboardComponentContents>
+                <groupingSortProperties/>
+            </dashboardComponent>
+            <rowIndex>0</rowIndex>
+            <rowSpan>2</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
             <colSpan>6</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
@@ -33,8 +47,7 @@
                     <axisBinding>y</axisBinding>
                     <column>RowCount</column>
                 </chartSummary>
-                <componentChartTheme>dark</componentChartTheme>
-                <componentType>Donut</componentType>
+                <componentType>ColumnGrouped</componentType>
                 <dashboardFilterColumns>
                     <column>CDF1</column>
                 </dashboardFilterColumns>
@@ -45,9 +58,14 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>cpm__Payment__c.cpm__Payment_Method__c</groupingColumn>
+                <groupingColumn>CDF1</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
@@ -56,13 +74,12 @@
                 <maxValuesDisplayed>6</maxValuesDisplayed>
                 <report>FinDockUsageReports/FinDock_Transaction_Usage_Report_KBC</report>
                 <showPercentage>false</showPercentage>
-                <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <sortLegendValues>true</sortLegendValues>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>0</rowIndex>
+            <rowIndex>2</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -75,7 +92,6 @@
                     <axisBinding>y</axisBinding>
                     <column>RowCount</column>
                 </chartSummary>
-                <componentChartTheme>dark</componentChartTheme>
                 <componentType>Column</componentType>
                 <dashboardFilterColumns>
                     <column>cpm__Inbound_Report__c.cpm__Date__c</column>
@@ -102,7 +118,7 @@
                 <sortLegendValues>true</sortLegendValues>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>0</rowIndex>
+            <rowIndex>2</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -110,7 +126,6 @@
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <componentChartTheme>dark</componentChartTheme>
                 <componentType>FlexTable</componentType>
                 <dashboardFilterColumns>
                     <column>CDF1</column>
@@ -154,7 +169,7 @@
                 <header>FinDock Transaction Usage</header>
                 <report>FinDockUsageReports/FinDock_Transaction_Usage_Report_KBC</report>
             </dashboardComponent>
-            <rowIndex>8</rowIndex>
+            <rowIndex>10</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -162,7 +177,6 @@
             <columnIndex>6</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <componentChartTheme>dark</componentChartTheme>
                 <componentType>FlexTable</componentType>
                 <dashboardFilterColumns>
                     <column>cpm__Inbound_Report__c.cpm__Date__c</column>
@@ -196,7 +210,7 @@
                 <header>FinDock Paylink Usage</header>
                 <report>FinDockUsageReports/FinDock_Paylinks_Usage_Report_OPN</report>
             </dashboardComponent>
-            <rowIndex>8</rowIndex>
+            <rowIndex>10</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>
