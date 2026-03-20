@@ -1,4 +1,13 @@
-<a href="https://githubsfdeploy.herokuapp.com?owner=findocklabs&repo=findock-healthcheck-npsp&ref=main">
+Deploy to Production/Developer Edition Orgs :
+
+<a href="https://githubsfdeploy.herokuapp.com?owner=findocklabs&repo=findock-usage-reports&ref=main">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
+
+Deploy to Sandboxes Orgs :
+
+<a href="https://githubsfdeploy.herokuapp.com?owner=findocklabs&repo=findock-usage-reports&ref=main">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
@@ -13,11 +22,12 @@ A quick description of what this repo contains:
 
 # Configuration
 - This project creates 2 Reports and 1 Dashboard 
-- The Dashboard has 4 default filters added for "All", "Last 12 Months", "Last 6 months" and "Last Month" that filters all the Reports by the Effective Date field for the Transaction Report and Created Date field for the Paylinks Report. 
+- The Dashboard has 4 default filters added for "All", "Last 12 Months", "Last 6 months" and "Last Month" that filters by the Effective Date field for the Transaction Report and Created Date field for the Paylinks Report. 
 - You can choose to add more filter options as required. 
 - The reference line on the usage report is dependent on your Contract. Please update the value by following the steps below
-- Open the Dashboard and click on Edit. Click on the Edit on the widget called "Transaction Usage Chart" and update the value in the "Reference Line Value" to the contracted transaction monthly volume.
-- If you use Paylinks, click on Edit on the widget called "Paylinks usage chart" and update the value in the "Reference Line Value" to the contract paylink monthly volume. If you do not use Paylinks yet, please feel free to delete the Report and the Chart widget along with the underlying report
+  - Open the Dashboard and click on Edit. Click on the Edit on the widget called "Transaction Usage Chart" and update the value in the "Reference Line Value" to the contracted transaction monthly volume.
+  - If you use Paylinks, click on Edit on the widget called "Paylinks usage chart" and update the value in the "Reference Line Value" to the contracted paylink monthly volume.
+  - If you do not use Paylinks yet, please feel free to remove the Report and the Chart widget along with the underlying report
 
 ## Full list of components
 
