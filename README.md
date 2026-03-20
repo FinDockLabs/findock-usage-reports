@@ -18,7 +18,7 @@ A quick description of what this repo contains:
 - Reports and a Dashboard to help monitor usage of FinDock Transactions and Paylinks
 - A Report folder where all these Reports are placed
 - A Dashboard Folder where the Dashboard is placed
-- These reports and dashboards are built to work with FinDock Contracts based on the Transaction model
+- These reports and dashboards are built to work with FinDock Contracts based on the Transaction model. Please note that the numbers shown in these reports reflect the actual data on the Salesforce Org and if the data is being deleted/archived, the numbers used for Billing purposes might not align with these reports.
 
 # Configuration
 - This project creates 2 Reports and 1 Dashboard 
