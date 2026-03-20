@@ -1,18 +1,49 @@
-# Salesforce DX Project: Next Steps
+<a href="https://githubsfdeploy.herokuapp.com?owner=findocklabs&repo=findock-healthcheck-npsp&ref=main">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
+</a>
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+# FinDock Usage Dashboard
 
-## How Do You Plan to Deploy Your Changes?
+A quick description of what this repo contains:
+- Reports and a Dashboard to help monitor usage of FinDock Transactions and Paylinks
+- A Report folder where all these Reports are placed
+- A Dashboard Folder where the Dashboard is placed
+- These reports and dashboards are built to work with FinDock Contracts based on the Transaction model
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+# Configuration
+- This project creates 2 Reports and 1 Dashboard 
+- The Dashboard has 4 default filters added for "All", "Last 12 Months", "Last 6 months" and "Last Month" that filters all the Reports by the Effective Date field for the Transaction Report and Created Date field for the Paylinks Report. 
+- You can choose to add more filter options as required. 
+- The reference line on the usage report is dependent on your Contract. Please update the value by following the steps below
+- Open the Dashboard and click on Edit. Click on the Edit on the widget called "Transaction Usage Chart" and update the value in the "Reference Line Value" to the contracted transaction monthly volume.
+- If you use Paylinks, click on Edit on the widget called "Paylinks usage chart" and update the value in the "Reference Line Value" to the contract paylink monthly volume. If you do not use Paylinks yet, please feel free to delete the Report and the Chart widget along with the underlying report
 
-## Configure Your Salesforce DX Project
+## Full list of components
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+```text
+**Reports**
+reports/FinDock_Transaction_Usage_Report_KBC.report-meta.xml
+reports/FinDock_Paylinks_Usage_Report_OPN.report-meta.xml
 
-## Read All About It
+**Report Folder**
+reports/FinDockUsageReports.reportFolder-meta.xml
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+**Dashboards**
+Dashboards/YIQFPFsjEiUUkPaAgEKiMdZZcGUndY.dashboard-meta.xml
+
+**Dashboard Folder**
+Dashboards/FinDockUsage.dashboardFolder-meta.xml
+```
+
+## Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via an issue or any other method with FinDock before making a change.
+
+## Support
+
+FinDock Labs is a non-supported group in FinDock that releases applications. Despite the name, assistance for any of these applications is not provided by FinDock Support because they are not officially supported features. For a list of these apps, visit the FinDock Labs account on Github.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details
