@@ -219,8 +219,6 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <description>Dashboard containing FinDock usage reports</description>
     <isGridLayout>true</isGridLayout>
-    <owner>bhuvana.lakshmi.narayana@findock.demo</owner>
-    <runningUser>bhuvana.lakshmi.narayana@findock.demo</runningUser>
     <textColor>#000000</textColor>
     <title>FinDock Usage Dashboard</title>
     <titleColor>#000000</titleColor>
